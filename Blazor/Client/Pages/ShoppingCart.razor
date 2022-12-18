@@ -1,0 +1,30 @@
+﻿@page "/ShoppingCart"
+@inherits ShoppingCartBase
+
+
+   
+      <div class = "row mb-5">
+        <div class ="col-md-9">
+            @foreach(var item in _cartMovies)
+            {
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <img src="@item.ImageUrl" width="300" class="img-thumbnail">
+                    </div>
+                    <div class = "col-md-8">
+                        <h5>@item.Title</h5>
+                        <div class="mb-4">@item.Summary</div>
+                       
+                    </div>
+
+                </div>
+            }
+        </div>
+</div>
+      
+   
+
+
+
+
+
